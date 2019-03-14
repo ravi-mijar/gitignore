@@ -1,6 +1,7 @@
 # Author: Ravindra Mijar. ravi.mijar@gmail.com
 
 # Talend studio is a ETL tool / IDE among other things.
+# https://www.talend.com/products/talend-open-studio/
 # It is a GUI based development tool where the developer 'paints' the ETL flow. The tool 
 # internally generates Java code for the flow. This makes it really complex to use git 
 # with Talend developed flows.
@@ -13,6 +14,9 @@
 # .screenshot
 # This is a template I have come up with over time, and after dealing with hundreds of
 # rebase conflicts in files that are temporary in the first place!
+# Some links that helped me come up with this template are:
+# https://community.talend.com/t5/Design-and-Development/Using-Git/td-p/65613 and
+#http://richardlog.com/post/15939924496/putting-talend-open-studio-projects-under-version
 # Hope this makes your Talend + Git journey easier! Cheers!
 
 target/
