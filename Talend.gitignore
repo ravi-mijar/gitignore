@@ -1,0 +1,35 @@
+# Author: Ravindra Mijar. ravi.mijar@gmail.com
+
+# Talend studio is a ETL tool / IDE among other things.
+# It is a GUI based development tool where the developer 'paints' the ETL flow. The tool 
+# internally generates Java code for the flow. This makes it really complex to use git 
+# with Talend developed flows.
+# This gitignore file aims to ONLY highlight the changes done by the developer, 
+# and ignore all the generated code and directories.
+
+# Talend Studio creates a `{baseDir}/workspace/<project-name>` hierarchy for your 
+# project. The flow developed i.e. painted in the IDE is generally stored under 
+# workspace/<project-name>/process/ folder with files like .item, .properties, and 
+# .screenshot
+# This is a template I have come up with over time, and after dealing with hundreds of
+# rebase conflicts in files that are temporary in the first place!
+# Hope this makes your Talend + Git journey easier! Cheers!
+
+target/
+.settings/
+workspace/.metadata/.plugins/
+workspace/.JETEmitters/
+workspace/.metadata/.lock
+workspace/.metadata/*.log
+logs
+*.jar
+*.class
+
+# All the generated code, thousands of xmls, .java files etc go under these directories.
+workspace/*/poms/code/routines/.classpath
+workspace/*/poms/code/routines/.project
+workspace/*/code/routines/system
+workspace/*/poms/jobs/process
+workspace/*/sqlPatterns/*
+.idea/
+temp/
