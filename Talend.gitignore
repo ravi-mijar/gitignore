@@ -21,19 +21,21 @@
 
 target/
 .settings/
-workspace/.metadata/.plugins/
-workspace/.JETEmitters/
-workspace/.metadata/.lock
-workspace/.metadata/*.log
+.metadata/.plugins/
+.JETEmitters/
+.metadata/.lock
+.metadata/*.log
 logs
 *.jar
 *.class
 
 # All the generated code, thousands of xmls, .java files etc go under these directories.
-workspace/*/poms/code/routines/.classpath
-workspace/*/poms/code/routines/.project
-workspace/*/code/routines/system
-workspace/*/poms/jobs/process
-workspace/*/sqlPatterns/*
+**/poms/code/routines/.classpath
+**/poms/code/routines/.project
+**/code/routines/system
+**/sqlPatterns/*
 .idea/
-temp/
+
+**/poms/jobs/process/*/*/**
+# uncomment this line below if you're using automated ci-cd 
+#!**/poms/jobs/process/*/*/pom.xml
